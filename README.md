@@ -62,12 +62,45 @@ project/
 
 ### Setting Up the Environment
 
+### Optional Setup: to set python env globally using oyenv
+
+**Install and Configure `pyenv`**:
+   Ensure you have `pyenv` installed:
+   ```bash
+   brew install pyenv
+   ```
+
+Add pyenv to your ~/.zshrc:
+
+   ```bash
+   export PYENV_ROOT="$HOME/.pyenv"
+   export PATH="$PYENV_ROOT/bin:$PATH"
+   eval "$(pyenv init --path)"
+   eval "$(pyenv init -)"
+   ```
+
+Source the .zshrc file to apply changes:
+
+   ```bash
+   source ~/.zshrc
+   ```
+
+Install Python 3.11.6: Use pyenv to install and set Python 3.11.6 globally:
+
+   ```bash
+   pyenv install 3.11.6
+   pyenv global 3.11.6
+   ```
+
+
+
 1. **Activate Python Environment**:
    Create and activate the virtual environment:
 
    ```bash
    python -m venv neoscreen_env
    source neoscreen_env/bin/activate
+   ```
 
 2. **Install Dependencies**:
 
