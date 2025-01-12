@@ -56,8 +56,8 @@ project/
 
 ### Prerequisites
 
-- Python 3.8+
-- PyTorch and PyTorch Geometric
+- Python 3.11.6
+- DeepChem, PyTorch and PyTorch Geometric
 - RDKit for molecular preprocessing
 
 ### Setting Up the Environment
