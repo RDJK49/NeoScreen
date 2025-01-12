@@ -5,7 +5,7 @@
 
 NeoScreen is a hybrid deep learning framework for virtual screening and target prediction in drug discovery. Combining ligand-based, structure-based, and graph-based approaches, NeoScreen leverages state-of-the-art techniques to achieve high accuracy and scalability.
 
----
+---x
 
 ## **Project Structure**
 
@@ -62,10 +62,41 @@ project/
 - PyTorch and PyTorch Geometric
 - RDKit for molecular preprocessing
 
-### Install Dependencies
+### Setting Up the Environment
+
+1. **Activate Python Environment**:
+   Create and activate the virtual environment:
+
+   ```bash
+   python -m venv neoscreen_env
+   source neoscreen_env/bin/activate
+
+2. **Install Dependencies**:
 
 ```bash
 pip install -r requirements.txt
+```
+
+3. **Configure DGL Backend: Ensure DGL uses the PyTorch backend:**:
+
+```bash
+mkdir -p ~/.dgl
+echo '{ "backend": "pytorch" }' > ~/.dgl/config.json
+```
+
+4. **Verify .zshrc Updates: Ensure your ~/.zshrc has the necessary paths:**:
+
+```bash
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+```
+
+5. **Source the .zshrc file:**:
+
+```bash
+source ~/.zshrc
 ```
 
 ---
