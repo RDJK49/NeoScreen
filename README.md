@@ -5,8 +5,6 @@
 
 NeoScreen is a hybrid deep learning framework for virtual screening and target prediction in drug discovery. Combining ligand-based, structure-based, and graph-based approaches, NeoScreen leverages state-of-the-art techniques to achieve high accuracy and scalability.
 
----x
-
 ## **Project Structure**
 
 ```
