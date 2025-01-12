@@ -1,0 +1,6 @@
+# Ignore virtual environment
+neoscreen_env/
+
+# Ignore large dataset files
+*.png
+*.json
